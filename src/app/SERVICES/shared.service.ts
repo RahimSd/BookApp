@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
+import { Register } from '../MODEL/register';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root'
 })
 export class SharedService {
-
-  constructor() { }
+  url = 'http://localhost:3000';
+  constructor(private http: HttpClient) { }
 
   isEmptyVal(val: any) {
     if (val == 'undefined' || val == undefined || val == '' || val == 'null' || val == null) {
@@ -13,5 +16,12 @@ export class SharedService {
     } else {
       return false;
     }
+  }
+  registerUsersList(registerData: Register): Observable<any> {
+    // console.log('rigistreUsers List', registerData);
+    return this.http.post(this.url + '/registerUsers', registerData);
+  }
+  getregistrUsersList(): Observable<any> {
+    return this.http.get('http://localhost:3000/registerUsers');
   }
 }

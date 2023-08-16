@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 import { SharedService } from 'src/app/SERVICES/shared.service';
 
 @Component({
@@ -12,7 +13,8 @@ export class LoginComponent {
   loginForm: FormGroup;
   errorMessage = '';
   successMessage = '';
-  constructor(private service: SharedService) {
+  registrsData: any = [];
+  constructor(private service: SharedService, private router: Router) {
     this.loginForm = new FormGroup({
       username: new FormControl(''),
       paasword: new FormControl(''),
@@ -20,15 +22,28 @@ export class LoginComponent {
 
   }
   loginUser(data: any) {
-    console.log('Login form data', data);
+    console.log('data login', data);
     if (this.service.isEmptyVal(data.username) || this.service.isEmptyVal(data.paasword)) {
       this.errorMessage = "Fileds can't be Blank";
       this.successMessage = '';
 
     } else {
-      this.successMessage = 'Success';
       this.errorMessage = '';
+      this.service.getregistrUsersList().
+        subscribe(res => {
+          console.log('login data list', res);
+          this.registrsData = res;
+          this.registrsData.filter((users: any) => {
+            console.log('users List', users);
+            if ((data.username == users.username) && (data.paasword == users.password)) {
+              this.router.navigate(['/viewBooks'])
 
+            } else {
+              this.errorMessage = 'Invalid credintials';
+
+            }
+          });
+        });
     }
   }
   resetAll() {

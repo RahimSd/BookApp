@@ -1,0 +1,52 @@
+{
+  "registerUsers": [
+    {
+      "firstname": "sayyad",
+      "username": "sayyad_rahim",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "firstname": "janapati",
+      "username": "saritha",
+      "password": "45454545",
+      "id": 2
+    },
+    {
+      "firstname": "shannyshann",
+      "username": "ysas",
+      "password": "wertyhjk",
+      "id": 3
+    },
+    {
+      "firstname": "ser",
+      "username": "ser",
+      "password": "ser",
+      "id": 4
+    },
+    {
+      "firstname": "cricket",
+      "username": "shaya",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "firstname": "kalyani",
+      "username": "kalyani",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "firstname": "Sayyad",
+      "username": "SayyadRah",
+      "password": "123456",
+      "id": 7
+    },
+    {
+      "firstname": "Saritha",
+      "username": "Saritha",
+      "password": "123456",
+      "id": 8
+    }
+  ]
+}
