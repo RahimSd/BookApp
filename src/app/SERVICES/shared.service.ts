@@ -24,4 +24,10 @@ export class SharedService {
   getregistrUsersList(): Observable<any> {
     return this.http.get('http://localhost:3000/registerUsers');
   }
+  getAuthorBooks(): Observable<any> {   // get to execute the observale subscribe
+    return this.http.get(this.url + '/authorBooks')
+  }
+  getRecomndadeBooks(): Observable<any> {
+    return this.http.get(this.url + '/recommendedBooks');
+  }
 }

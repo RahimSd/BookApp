@@ -34,13 +34,13 @@ export class RegistrationComponent {
       console.log('ELSE==>');
 
       this.errorMsg = "";
-      this.successMsg = "Rigistration Successfully"
+
       this.shared_service.registerUsersList(register)
         .subscribe(res => {
-          console.log('userls List', res);
+          this.successMsg = "Rigistration Successfully";
 
         }, error => {
-          console.log('getting  Errors ');
+          this.errorMsg = 'Registration Failled';
 
         }
         );

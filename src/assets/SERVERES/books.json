@@ -13,40 +13,119 @@
       "id": 2
     },
     {
-      "firstname": "shannyshann",
-      "username": "ysas",
-      "password": "wertyhjk",
+      "firstname": "uu",
+      "username": "uuu",
+      "password": "uuuu",
       "id": 3
     },
     {
-      "firstname": "ser",
-      "username": "ser",
-      "password": "ser",
+      "firstname": "hhhh",
+      "username": "hhhh",
+      "password": "hhh",
       "id": 4
+    }
+  ],
+  "authorBooks": [
+    {
+      "id": 1,
+      "bookname": "Veronica",
+      "author": "Divergent",
+      "year": "2020",
+      "language": "English",
+      "description": "driving machine",
+      "image": "assets/images/ghosthunter.jpg"
     },
     {
-      "firstname": "cricket",
-      "username": "shaya",
-      "password": "123456",
-      "id": 5
+      "id": 2,
+      "bookname": "Big Nate",
+      "author": "incoln Pierce",
+      "year": "2020",
+      "language": "English",
+      "description": "Big Nate The Boy With The Biggest Head In The World",
+      "image": "assets/images/bignate.jpg"
     },
     {
-      "firstname": "kalyani",
-      "username": "kalyani",
-      "password": "123456",
-      "id": 6
+      "id": 3,
+      "bookname": "Horris Grows Down",
+      "author": "Shari Becker",
+      "year": "2020",
+      "language": "English",
+      "description": "The history of squash rackets",
+      "image": "assets/images/horyyporter.jpg"
     },
     {
-      "firstname": "Sayyad",
-      "username": "SayyadRah",
-      "password": "123456",
-      "id": 7
+      "id": 4,
+      "bookname": "Adulterers Anonymous",
+      "author": "Lydia Lunch",
+      "year": "2020",
+      "language": "English",
+      "description": "Lydia Lunch",
+      "image": "assets/images/lunchlady.jpg"
     },
     {
-      "firstname": "Saritha",
-      "username": "Saritha",
-      "password": "123456",
-      "id": 8
+      "id": 5,
+      "bookname": "Roller Girl",
+      "author": "Victoria Jamieson",
+      "year": "2020",
+      "language": "English",
+      "description": "Roller Girl",
+      "image": "assets/images/rollergirl.jpg"
+    },
+    {
+      "id": 6,
+      "bookname": "Horris Grows Down",
+      "author": "Shari Becker",
+      "language": "English",
+      "year": "2020",
+      "description": "The history of squash rackets",
+      "image": "assets/images/horyyporter.jpg"
+    }
+  ],
+  "recommendedBooks": [
+    {
+      "id": 11,
+      "bookname": "tiktok",
+      "author": "Shari Becker",
+      "language": "English",
+      "year": "2021",
+      "description": "The history of squash rackets",
+      "image": "assets/images/tiktok.jpg"
+    },
+    {
+      "id": 12,
+      "bookname": "precaution",
+      "author": "James Fenimore Cooper",
+      "year": "2022",
+      "language": "English",
+      "description": "Big Nate The Boy With The Biggest Head In The World",
+      "image": "assets/images/precaution.jpg"
+    },
+    {
+      "id": 14,
+      "bookname": "Charlotte",
+      "author": "E.B White",
+      "year": "2020",
+      "language": "English",
+      "description": "driving machine",
+      "image": "assets/images/char.jpg"
+    },
+    {
+      "id": 15,
+      "bookname": "Gregory Shadow",
+      "author": "Don Freeman",
+      "year": "2020",
+      "language": "English",
+      "description": "driving machine",
+      "image": "assets/images/gregory.jpg"
+    },
+    {
+      "id": 22,
+      "bookname": "horage",
+      "author": "horage jhon",
+      "year": "2020",
+      "language": "English",
+      "description": "driving machine",
+      "image": "assets/images/horage.jpg"
     }
   ]
 }

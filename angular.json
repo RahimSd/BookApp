@@ -1,6 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+  "cli": {
+    "cache": {
+      "enabled": false
+    },
+    "analytics": "961e208e-26a4-432d-bc34-298a7ec1a342"
+  },
   "newProjectRoot": "projects",
   "projects": {
     "BookApp": {
@@ -94,8 +100,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "9249afd1-84bf-460d-ba5a-a4a6e66a7a58"
   }
 }
