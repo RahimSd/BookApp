@@ -8,6 +8,7 @@ import { RegistrationComponent } from './Components/registration/registration.co
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { ViewBooksComponent } from './Components/view-books/view-books.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { ViewBooksComponent } from './Components/view-books/view-books.component
     BrowserModule,
     AppRoutingModule,
     FormsModule, ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

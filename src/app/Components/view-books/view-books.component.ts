@@ -9,6 +9,8 @@ import { SharedService } from 'src/app/SERVICES/shared.service';
 export class ViewBooksComponent implements OnInit {
   authorBooksdata: any = [];
   recomondadeBooksdata: any = [];
+  p: number = 1;
+  pp: number = 1;
   constructor(private shared_Service: SharedService) {
 
   }
@@ -30,5 +32,9 @@ export class ViewBooksComponent implements OnInit {
       .subscribe(result => {
         this.recomondadeBooksdata = result;
       })
+  }
+  addfavoritebooks(book: any) {
+    console.log('add favorites ', book);
+
   }
 }
