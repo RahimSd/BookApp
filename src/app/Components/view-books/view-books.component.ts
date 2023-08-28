@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { SharedService } from 'src/app/SERVICES/shared.service';
 
 @Component({
@@ -11,12 +12,15 @@ export class ViewBooksComponent implements OnInit {
   recomondadeBooksdata: any = [];
   p: number = 1;
   pp: number = 1;
-  constructor(private shared_Service: SharedService) {
+  constructor(private shared_Service: SharedService, private router: Router) {
 
   }
   ngOnInit() {
     this.getAuthBooks();
     this.getRecomBooks();
+    console.log('URl ==>', this.router.url);
+
+
   }
 
   getAuthBooks() {

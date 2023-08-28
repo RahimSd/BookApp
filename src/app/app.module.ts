@@ -9,12 +9,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { ViewBooksComponent } from './Components/view-books/view-books.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { HeaderComponent } from './Components/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistrationComponent,
-    ViewBooksComponent
+    ViewBooksComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

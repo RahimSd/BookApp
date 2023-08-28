@@ -37,7 +37,7 @@ export class LoginComponent {
             console.log('users List', users);
             if ((data.username == users.username) && (data.paasword == users.password)) {
               this.router.navigate(['/viewBooks'])
-
+              localStorage.setItem("SessionUser", JSON.stringify(data));
             } else {
               this.errorMessage = 'Invalid credintials';
 
