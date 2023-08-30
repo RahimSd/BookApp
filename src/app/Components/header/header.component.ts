@@ -16,8 +16,6 @@ export class HeaderComponent implements OnInit {
 
   }
   logout() {
-    console.log('Logout ==>');
-
     if (localStorage.getItem("SessionUser")) {
       localStorage.removeItem('SessionUser');
       localStorage.clear();

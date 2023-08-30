@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ViewBooksComponent } from './Components/view-books/view-books.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { HeaderComponent } from './Components/header/header.component';
+import { AuthguardService } from './SERVICES/authguard.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,7 @@ import { HeaderComponent } from './Components/header/header.component';
     HttpClientModule,
     NgxPaginationModule,
   ],
-  providers: [],
+  providers: [AuthguardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
