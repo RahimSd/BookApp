@@ -137,5 +137,15 @@
       "image": "assets/images/horage.jpg"
     }
   ],
-  "favoritesBooks": []
+  "favoritesauthorthBooks": [
+    {
+      "id": 14,
+      "bookname": "Charlotte",
+      "author": "E.B White",
+      "year": "2020",
+      "language": "English",
+      "description": "driving machine",
+      "image": "assets/images/char.jpg"
+    }
+  ]
 }

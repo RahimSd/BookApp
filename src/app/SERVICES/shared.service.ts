@@ -30,4 +30,16 @@ export class SharedService {
   getRecomndadeBooks(): Observable<any> {
     return this.http.get(this.url + '/recommendedBooks');
   }
+  addfavoriterecombooks(data: any): Observable<any> {
+    // console.log('rigistreUsers List', registerData);
+    return this.http.post(this.url + '/favoritesauthorthBooks', data);
+  }
+  getrecFavBooks(): Observable<any> {   // get to execute the observale subscribe
+    return this.http.get(this.url + '/favoritesauthorthBooks')
+  }
+  deleteFavBooks(bookid: any): Observable<any> {
+    console.log('delete section', bookid);
+
+    return this.http.delete(bookid)
+  }
 }
